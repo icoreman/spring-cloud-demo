@@ -1,6 +1,7 @@
 # spring-cloud-demo
-the demo of Spring Cloud
+the demo of Spring Cloud。
 
+version： Spring Cloud Dalston.SR1, Spring Boot 1.5.9.RELEASE。
 
 ### 如何运行：  
 1）克隆项目本地；  
