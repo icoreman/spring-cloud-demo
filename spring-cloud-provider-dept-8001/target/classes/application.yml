@@ -25,8 +25,8 @@ spring:
 eureka:
   client: #客户端注册进eureka服务列表内
     service-url: 
-      #defaultZone: http://localhost:9001/eureka
-      defaultZone: http://localhost:9001/eureka/,http://localhost:9002/eureka/,http://localhost:9003/eureka/      
+      defaultZone: http://localhost:9001/eureka
+      #defaultZone: http://localhost:9001/eureka/,http://localhost:9002/eureka/,http://localhost:9003/eureka/      
   instance:
     instance-id: microservicecloud-dept8001
     prefer-ip-address: true     #访问路径可以显示IP地址  
