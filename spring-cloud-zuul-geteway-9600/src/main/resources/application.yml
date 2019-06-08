@@ -1,0 +1,29 @@
+server: 
+  port: 9600
+ 
+spring: 
+  application:
+    name: microservicecloud-zuul-gateway
+ 
+eureka: 
+  client: 
+    service-url: 
+      defaultZone: http://eureka9001.com:9001/eureka,http://eureka9002.com:9002/eureka,http://eureka9003.com:9003/eureka  
+  instance:
+    instance-id: gateway-9600.com
+    prefer-ip-address: true 
+ 
+ 
+zuul: 
+  #ignored-services: microservicecloud-dept
+  prefix: /xuxx
+  ignored-services: "*"
+  routes: 
+    mydept.serviceId: microservicecloud-dept
+    mydept.path: /mydept/**
+ 
+info: 
+  app.name: microservicecloud
+  company.name: xuxingxing
+  build.artifactId: $project.artifactId$
+  build.version: $project.version$
